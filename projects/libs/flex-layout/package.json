@@ -1,6 +1,6 @@
 {
   "name": "ngx-flex-layout",
-  "version": "0.0.0-PLACEHOLDER",
+  "version": "15.0.0",
   "exports": {
     "./mq": {
       "sass": "./core/sass/_layout-bp.scss"

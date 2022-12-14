@@ -24,7 +24,8 @@
     "test:ssr": "webpack --config test/webpack-spec-ssr-bundle.js && jasmine --config=test/jasmine-ssr.json",
     "lint": "stylelint projects/libs/**/*.scss --config=stylelint-config.json && tslint --project ./tsconfig.json --config tslint.json",
     "release": "npm run build && npm run stamp",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
+    "pack": "npm run build && cd dist/releases/flex-layout && npm pack"
   },
   "private": true,
   "requiredAngularVersion": "^15.0.0",
