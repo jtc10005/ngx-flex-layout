@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 
 import { AppComponent } from './app.component';
 import { SplitModule } from './split/split.module';

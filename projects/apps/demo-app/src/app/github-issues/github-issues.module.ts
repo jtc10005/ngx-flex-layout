@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 
 import { MediaQueryStatusModule } from '../media-query-status/media-query-status.module';
 import { GithubIssuesComponent } from './github-issues/github-issues.component';

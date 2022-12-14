@@ -5,11 +5,11 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import { customMatchers, expect } from 'ngx-flex-layout/_private-utils/testing';
+import { customMatchers, expect } from 'ngx-flexible-layout/_private-utils/testing';
 import {
-  buildMapFromList,
-  buildMapFromSet, buildRawList, NgStyleKeyValue,
-  NgStyleMap, NgStyleRawList, stringToKeyValue
+    buildMapFromList,
+    buildMapFromSet, buildRawList, NgStyleKeyValue,
+    NgStyleMap, NgStyleRawList, stringToKeyValue
 } from './style-transforms';
 
 describe('ngStyleUtils', () => {

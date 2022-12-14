@@ -8,11 +8,11 @@
 import { isPlatformServer } from '@angular/common';
 import { Directive, ElementRef, Inject, Injectable, Input, PLATFORM_ID } from '@angular/core';
 import {
-  BaseDirective2, MediaMarshaller, SERVER_TOKEN,
-  StyleBuilder,
-  StyleDefinition,
-  StyleUtils
-} from 'ngx-flex-layout/core';
+    BaseDirective2, MediaMarshaller, SERVER_TOKEN,
+    StyleBuilder,
+    StyleDefinition,
+    StyleUtils
+} from 'ngx-flexible-layout/core';
 
 @Injectable({providedIn: 'root'})
 export class ImgSrcStyleBuilder extends StyleBuilder {

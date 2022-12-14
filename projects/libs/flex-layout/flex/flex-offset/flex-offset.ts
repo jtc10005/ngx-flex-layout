@@ -12,8 +12,8 @@ import {
     StyleDefinition,
     StyleUtils,
     ɵmultiply as multiply
-} from 'ngx-flex-layout/core';
-import { isFlowHorizontal } from 'ngx-flex-layout/_private-utils';
+} from 'ngx-flexible-layout/core';
+import { isFlowHorizontal } from 'ngx-flexible-layout/_private-utils';
 import { takeUntil } from 'rxjs/operators';
 
 

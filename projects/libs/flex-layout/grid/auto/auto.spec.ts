@@ -10,13 +10,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import {
-  SERVER_TOKEN,
-  StyleUtils, ɵMatchMedia as MatchMedia,
-  ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
-import { GridModule } from 'ngx-flex-layout/grid';
-import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flex-layout/_private-utils/testing';
+    SERVER_TOKEN,
+    StyleUtils, ɵMatchMedia as MatchMedia,
+    ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
+import { GridModule } from 'ngx-flexible-layout/grid';
+import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flexible-layout/_private-utils/testing';
 
 
 describe('grid auto parent directive', () => {

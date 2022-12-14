@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { NgModule } from '@angular/core';
-import { CoreModule } from 'ngx-flex-layout/core';
+import { CoreModule } from 'ngx-flexible-layout/core';
 
 import { DefaultClassDirective } from './class/class';
 import { DefaultImgSrcDirective } from './img-src/img-src';

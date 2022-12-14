@@ -9,13 +9,13 @@ import { isPlatformServer } from '@angular/common';
 import { Inject, ModuleWithProviders, NgModule, PLATFORM_ID } from '@angular/core';
 
 import {
-  BreakPoint,
-  BREAKPOINT, DEFAULT_CONFIG, LayoutConfigOptions,
-  LAYOUT_CONFIG, SERVER_TOKEN
-} from 'ngx-flex-layout/core';
-import { ExtendedModule } from 'ngx-flex-layout/extended';
-import { FlexModule } from 'ngx-flex-layout/flex';
-import { GridModule } from 'ngx-flex-layout/grid';
+    BreakPoint,
+    BREAKPOINT, DEFAULT_CONFIG, LayoutConfigOptions,
+    LAYOUT_CONFIG, SERVER_TOKEN
+} from 'ngx-flexible-layout/core';
+import { ExtendedModule } from 'ngx-flexible-layout/extended';
+import { FlexModule } from 'ngx-flexible-layout/flex';
+import { GridModule } from 'ngx-flexible-layout/grid';
 
 /**
  * FlexLayoutModule -- the main import for all utilities in the Angular Layout library

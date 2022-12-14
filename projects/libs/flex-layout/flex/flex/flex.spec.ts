@@ -9,18 +9,18 @@ import { Platform } from '@angular/cdk/platform';
 import { CommonModule, isPlatformServer } from '@angular/common';
 import { Component, Injectable, PLATFORM_ID, ViewChild } from '@angular/core';
 import { ComponentFixture, fakeAsync, inject, TestBed } from '@angular/core/testing';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
     StyleBuilder,
     StyleUtils, ɵMatchMedia as MatchMedia,
     ɵMockMatchMedia as MockMatchMedia,
     ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
-import { DefaultFlexDirective, DefaultLayoutDirective, FlexStyleBuilder } from 'ngx-flex-layout/flex';
+} from 'ngx-flexible-layout/core';
+import { DefaultFlexDirective, DefaultLayoutDirective, FlexStyleBuilder } from 'ngx-flexible-layout/flex';
 import {
     customMatchers,
     expect, expectEl, expectNativeEl, makeCreateTestComponent, queryFor
-} from 'ngx-flex-layout/_private-utils/testing';
+} from 'ngx-flexible-layout/_private-utils/testing';
 
 
 describe('flex directive', () => {

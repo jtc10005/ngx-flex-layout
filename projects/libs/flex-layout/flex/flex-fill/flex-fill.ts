@@ -10,7 +10,7 @@ import {
     BaseDirective2, MediaMarshaller, StyleBuilder,
     StyleDefinition,
     StyleUtils
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 
 const FLEX_FILL_CSS = {
   'margin': 0,

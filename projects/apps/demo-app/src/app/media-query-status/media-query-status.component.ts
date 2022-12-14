@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MediaChange, MediaObserver } from 'ngx-flex-layout';
+import { MediaChange, MediaObserver } from 'ngx-flexible-layout';
 import { Observable } from 'rxjs';
 
 @Component({

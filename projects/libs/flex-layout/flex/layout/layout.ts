@@ -7,12 +7,12 @@
  */
 import { Directive, ElementRef, Inject, Injectable, OnChanges } from '@angular/core';
 import {
-  BaseDirective2, LayoutConfigOptions, LAYOUT_CONFIG, MediaMarshaller, StyleBuilder,
-  StyleDefinition,
-  StyleUtils
-} from 'ngx-flex-layout/core';
+    BaseDirective2, LayoutConfigOptions, LAYOUT_CONFIG, MediaMarshaller, StyleBuilder,
+    StyleDefinition,
+    StyleUtils
+} from 'ngx-flexible-layout/core';
 
-import { buildLayoutCSS } from 'ngx-flex-layout/_private-utils';
+import { buildLayoutCSS } from 'ngx-flexible-layout/_private-utils';
 
 export interface LayoutStyleDisplay {
   readonly display: string;

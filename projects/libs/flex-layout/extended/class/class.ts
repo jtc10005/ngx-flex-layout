@@ -7,17 +7,17 @@
  */
 import { NgClass } from '@angular/common';
 import {
-  Directive,
-  DoCheck,
-  ElementRef,
-  Input,
-  IterableDiffers,
-  KeyValueDiffers,
-  Optional,
-  Renderer2,
-  Self
+    Directive,
+    DoCheck,
+    ElementRef,
+    Input,
+    IterableDiffers,
+    KeyValueDiffers,
+    Optional,
+    Renderer2,
+    Self
 } from '@angular/core';
-import { BaseDirective2, MediaMarshaller, StyleUtils } from 'ngx-flex-layout/core';
+import { BaseDirective2, MediaMarshaller, StyleUtils } from 'ngx-flexible-layout/core';
 
 @Directive()
 export class ClassDirective extends BaseDirective2 implements DoCheck {

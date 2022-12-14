@@ -1,5 +1,5 @@
 {
-  "name": "ngx-flex-layout",
+  "name": "ngx-flexible-layout",
   "version": "0.0.0-PLACEHOLDER",
   "exports": {
     "./mq": {

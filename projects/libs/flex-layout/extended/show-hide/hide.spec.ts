@@ -9,15 +9,15 @@ import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import {
-  MediaObserver,
-  SERVER_TOKEN,
-  StyleUtils, ɵMatchMedia as MatchMedia,
-  ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
+    MediaObserver,
+    SERVER_TOKEN,
+    StyleUtils, ɵMatchMedia as MatchMedia,
+    ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
 
 
-import { customMatchers, expect, expectNativeEl, makeCreateTestComponent, NgMatchers, queryFor } from 'ngx-flex-layout/_private-utils/testing';
+import { customMatchers, expect, expectNativeEl, makeCreateTestComponent, NgMatchers, queryFor } from 'ngx-flexible-layout/_private-utils/testing';
 import { FlexLayoutModule } from '../../module';
 
 

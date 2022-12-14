@@ -10,7 +10,7 @@ import { BEFORE_APP_SERIALIZED } from '@angular/platform-server';
 import {
     BreakPoint, BREAKPOINTS,
     CLASS_NAME, MediaMarshaller, SERVER_TOKEN, sortAscendingPriority, StylesheetMap, ɵMatchMedia as MatchMedia
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 
 import { ServerMatchMedia } from './server-match-media';
 

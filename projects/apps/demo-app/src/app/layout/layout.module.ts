@@ -3,11 +3,11 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 import { DocsLayoutComponent } from './docs-layout/docs-layout.component';
 import { FlexAlignSelfComponent } from './flex-align-self/flex-align-self.component';
 import {
-  FlexAttributeValuesComponent
+    FlexAttributeValuesComponent
 } from './flex-attribute-values/flex-attribute-values.component';
 import { FlexOffsetValuesComponent } from './flex-offset-values/flex-offset-values.component';
 import { FlexRowFillWrapComponent } from './flex-row-fill-wrap/flex-row-fill-wrap.component';
@@ -16,7 +16,7 @@ import { LayoutAlignmentComponent } from './layout-alignment/layout-alignment.co
 import { LayoutFillComponent } from './layout-fill/layout-fill.component';
 import { LayoutGapComponent } from './layout-gap/layout-gap.component';
 import {
-  LayoutWithDirectionComponent
+    LayoutWithDirectionComponent
 } from './layout-with-direction/layout-with-direction.component';
 import { RoutingModule } from './routing.module';
 

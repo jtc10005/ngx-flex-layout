@@ -14,8 +14,8 @@ import {
     BaseDirective2, ElementMatcher, LayoutConfigOptions, LAYOUT_CONFIG, MediaMarshaller, StyleBuilder,
     StyleDefinition,
     StyleUtils, ɵmultiply as multiply
-} from 'ngx-flex-layout/core';
-import { LAYOUT_VALUES } from 'ngx-flex-layout/_private-utils';
+} from 'ngx-flexible-layout/core';
+import { LAYOUT_VALUES } from 'ngx-flexible-layout/_private-utils';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 

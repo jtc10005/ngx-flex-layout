@@ -9,7 +9,7 @@ import { DOCUMENT } from '@angular/common';
 import { Inject, Injectable, NgZone, PLATFORM_ID } from '@angular/core';
 import {
     BreakPoint, BREAKPOINTS, LayoutConfigOptions, LAYOUT_CONFIG, ɵMatchMedia as MatchMedia
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 
 /**
  * Special server-only class to simulate a MediaQueryList and

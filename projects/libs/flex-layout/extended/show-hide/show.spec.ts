@@ -12,18 +12,18 @@ import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
-  MediaObserver,
-  SERVER_TOKEN,
-  StyleUtils, ɵMatchMedia as MatchMedia,
-  ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
-import { ShowHideDirective } from 'ngx-flex-layout/extended';
+    MediaObserver,
+    SERVER_TOKEN,
+    StyleUtils, ɵMatchMedia as MatchMedia,
+    ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
+import { ShowHideDirective } from 'ngx-flexible-layout/extended';
 import {
-  customMatchers, expectEl, expectNativeEl, makeCreateTestComponent, queryFor
-} from 'ngx-flex-layout/_private-utils/testing';
+    customMatchers, expectEl, expectNativeEl, makeCreateTestComponent, queryFor
+} from 'ngx-flexible-layout/_private-utils/testing';
 
 
 describe('show directive', () => {
