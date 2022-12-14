@@ -9,7 +9,7 @@ import { CommonModule, isPlatformServer } from '@angular/common';
 import { Component, PLATFORM_ID } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 
-import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flex-layout/_private-utils/testing';
+import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flexible-layout/_private-utils/testing';
 import { StyleUtils } from './style-utils';
 
 describe('styler', () => {

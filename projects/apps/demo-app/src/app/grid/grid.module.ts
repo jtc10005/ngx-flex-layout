@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatRadioModule } from '@angular/material/radio';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 
 import { DocsGridComponent } from './docs-grid/docs-grid.component';
 import { GridLayoutComponent } from './grid-layout/grid-layout.component';

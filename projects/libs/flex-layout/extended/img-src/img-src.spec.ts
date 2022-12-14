@@ -9,13 +9,13 @@ import { CommonModule, isPlatformServer } from '@angular/common';
 import { Component, PLATFORM_ID } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import {
-  SERVER_TOKEN,
-  StyleUtils, ɵMatchMedia as MatchMedia,
-  ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
+    SERVER_TOKEN,
+    StyleUtils, ɵMatchMedia as MatchMedia,
+    ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
 
-import { customMatchers, expect, expectEl, makeCreateTestComponent, queryFor, _dom as _ } from 'ngx-flex-layout/_private-utils/testing';
+import { customMatchers, expect, expectEl, makeCreateTestComponent, queryFor, _dom as _ } from 'ngx-flexible-layout/_private-utils/testing';
 import { FlexLayoutModule } from '../../module';
 
 const SRC_URLS = {

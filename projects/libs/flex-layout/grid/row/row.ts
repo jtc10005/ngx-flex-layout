@@ -10,7 +10,7 @@ import {
     BaseDirective2, MediaMarshaller,
     StyleBuilder,
     StyleDefinition, StyleUtils
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 
 const DEFAULT_VALUE = 'auto';
 

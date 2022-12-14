@@ -3,21 +3,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 
 import { MediaQueryStatusModule } from '../media-query-status/media-query-status.module';
 import { DocsResponsiveComponent } from './docs-responsive/docs-responsive.component';
 import {
-  ResponsiveFlexDirectiveComponent
+    ResponsiveFlexDirectiveComponent
 } from './responsive-flex-directive/responsive-flex-directive.component';
 import {
-  ResponsiveFlexOrderComponent
+    ResponsiveFlexOrderComponent
 } from './responsive-flex-order/responsive-flex-order.component';
 import {
-  ResponsiveLayoutDirectionComponent
+    ResponsiveLayoutDirectionComponent
 } from './responsive-layout-direction/responsive-layout-direction.component';
 import {
-  ResponsiveRowColumnComponent
+    ResponsiveRowColumnComponent
 } from './responsive-row-column/responsive-row-column.component';
 import { ResponsiveShowHideComponent } from './responsive-show-hide/responsive-show-hide.component';
 import { ResponsiveStyleComponent } from './responsive-style/responsive-style.component';

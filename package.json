@@ -1,7 +1,7 @@
 {
   "name": "flex-layout-srcs",
   "description": "Angular Flex Layout",
-  "version": "15.0.0",
+  "version": "15.0.1",
   "homepage": "https://github.com/jtc10005/ngx-flex-layout",
   "bugs": "https://github.com/jtc10005/ngx-flex-layout/issues",
   "repository": {
@@ -26,7 +26,7 @@
     "release": "npm run build && npm run stamp",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "pack": "npm run stamp && cd dist/releases/flex-layout && npm pack",
-    "publish":"npm run stamp && cd dist/releases/flex-layout && npm publish --dry-run --access public"
+    "publish_to_npm":"npm run release && cd dist/releases/flex-layout && npm publish --access public"
   },
   "private": true,
   "requiredAngularVersion": "^15.0.0",

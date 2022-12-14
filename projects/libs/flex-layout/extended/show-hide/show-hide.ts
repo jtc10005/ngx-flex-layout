@@ -8,13 +8,13 @@
 import { coerceBooleanProperty } from '@angular/cdk/coercion';
 import { isPlatformServer } from '@angular/common';
 import {
-  AfterViewInit, Directive,
-  ElementRef, Inject, Injectable, OnChanges, PLATFORM_ID, SimpleChanges
+    AfterViewInit, Directive,
+    ElementRef, Inject, Injectable, OnChanges, PLATFORM_ID, SimpleChanges
 } from '@angular/core';
 import {
-  BaseDirective2, LayoutConfigOptions, LAYOUT_CONFIG, MediaMarshaller,
-  SERVER_TOKEN, StyleBuilder, StyleUtils
-} from 'ngx-flex-layout/core';
+    BaseDirective2, LayoutConfigOptions, LAYOUT_CONFIG, MediaMarshaller,
+    SERVER_TOKEN, StyleBuilder, StyleUtils
+} from 'ngx-flexible-layout/core';
 import { takeUntil } from 'rxjs/operators';
 
 export interface ShowHideParent {

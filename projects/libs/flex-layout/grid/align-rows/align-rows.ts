@@ -10,7 +10,7 @@ import { Directive, ElementRef, Injectable, Input } from '@angular/core';
 import {
     BaseDirective2, MediaMarshaller, StyleBuilder,
     StyleDefinition, StyleUtils
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 
 const DEFAULT_MAIN = 'start';
 const DEFAULT_CROSS = 'stretch';

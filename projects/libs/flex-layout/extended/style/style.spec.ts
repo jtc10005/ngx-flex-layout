@@ -9,12 +9,12 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import {
-  CoreModule, StyleUtils, ɵMatchMedia as MatchMedia, ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
-import { DefaultLayoutDirective } from 'ngx-flex-layout/flex';
+    CoreModule, StyleUtils, ɵMatchMedia as MatchMedia, ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
+import { DefaultLayoutDirective } from 'ngx-flexible-layout/flex';
 
-import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flex-layout/_private-utils/testing';
+import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flexible-layout/_private-utils/testing';
 import { DefaultStyleDirective } from './style';
 
 describe('style directive', () => {

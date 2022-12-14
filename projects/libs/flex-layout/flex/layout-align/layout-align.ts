@@ -10,10 +10,10 @@ import {
     BaseDirective2, ElementMatcher, MediaMarshaller, StyleBuilder,
     StyleDefinition,
     StyleUtils
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 import { takeUntil } from 'rxjs/operators';
 
-import { extendObject, isFlowHorizontal, LAYOUT_VALUES } from 'ngx-flex-layout/_private-utils';
+import { extendObject, isFlowHorizontal, LAYOUT_VALUES } from 'ngx-flexible-layout/_private-utils';
 
 export interface LayoutAlignParent {
   layout: string;

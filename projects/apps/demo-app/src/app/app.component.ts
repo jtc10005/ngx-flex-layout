@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { VERSION } from 'ngx-flex-layout';
+import { VERSION } from 'ngx-flexible-layout';
 
 @Component({
   selector: 'demo-root',

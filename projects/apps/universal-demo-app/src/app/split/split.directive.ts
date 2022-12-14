@@ -1,17 +1,17 @@
 import { isPlatformBrowser } from '@angular/common';
 import {
-  AfterContentInit,
-  ContentChild,
-  ContentChildren,
-  Directive,
-  ElementRef,
-  Inject,
-  Input,
-  OnDestroy,
-  PLATFORM_ID,
-  QueryList
+    AfterContentInit,
+    ContentChild,
+    ContentChildren,
+    Directive,
+    ElementRef,
+    Inject,
+    Input,
+    OnDestroy,
+    PLATFORM_ID,
+    QueryList
 } from '@angular/core';
-import { FlexDirective } from 'ngx-flex-layout';
+import { FlexDirective } from 'ngx-flexible-layout';
 
 import { SplitAreaDirective } from './split-area.directive';
 import { SplitHandleDirective } from './split-handle.directive';

@@ -11,10 +11,10 @@ import {
     LAYOUT_CONFIG, MediaMarshaller, StyleBuilder,
     StyleDefinition, StyleUtils,
     validateBasis
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 import { takeUntil } from 'rxjs/operators';
 
-import { extendObject, isFlowHorizontal } from 'ngx-flex-layout/_private-utils';
+import { extendObject, isFlowHorizontal } from 'ngx-flexible-layout/_private-utils';
 
 interface FlexBuilderParent {
   direction: string;

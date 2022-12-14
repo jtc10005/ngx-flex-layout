@@ -11,10 +11,10 @@
  * @description
  * Entry point for all public APIs of Angular Flex-Layout.
  */
-export * from 'ngx-flex-layout/core';
-export * from 'ngx-flex-layout/extended';
-export * from 'ngx-flex-layout/flex';
-export * from 'ngx-flex-layout/grid';
+export * from 'ngx-flexible-layout/core';
+export * from 'ngx-flexible-layout/extended';
+export * from 'ngx-flexible-layout/flex';
+export * from 'ngx-flexible-layout/grid';
 // Flex-Layout Module
 export * from './module';
 export * from './version';

@@ -13,10 +13,10 @@ import {
     StyleUtils, ɵMatchMedia as MatchMedia,
     ɵMockMatchMedia as MockMatchMedia,
     ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
+} from 'ngx-flexible-layout/core';
 
-import { extendObject } from 'ngx-flex-layout/_private-utils';
-import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flex-layout/_private-utils/testing';
+import { extendObject } from 'ngx-flexible-layout/_private-utils';
+import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flexible-layout/_private-utils/testing';
 
 import { GridModule } from '../module';
 

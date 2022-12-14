@@ -7,26 +7,26 @@
  */
 import { isPlatformServer, NgStyle } from '@angular/common';
 import {
-  Directive,
-  DoCheck,
-  ElementRef,
-  Inject,
-  KeyValueDiffers,
-  Optional,
-  PLATFORM_ID,
-  Renderer2,
-  SecurityContext,
-  Self
+    Directive,
+    DoCheck,
+    ElementRef,
+    Inject,
+    KeyValueDiffers,
+    Optional,
+    PLATFORM_ID,
+    Renderer2,
+    SecurityContext,
+    Self
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import {
-  BaseDirective2, MediaMarshaller,
-  SERVER_TOKEN, StyleUtils
-} from 'ngx-flex-layout/core';
+    BaseDirective2, MediaMarshaller,
+    SERVER_TOKEN, StyleUtils
+} from 'ngx-flexible-layout/core';
 
 import {
-  buildMapFromSet, buildRawList,
-  getType, keyValuesToMap, NgStyleKeyValue, NgStyleMap, NgStyleRawList, NgStyleSanitizer, NgStyleType, stringToKeyValue
+    buildMapFromSet, buildRawList,
+    getType, keyValuesToMap, NgStyleKeyValue, NgStyleMap, NgStyleRawList, NgStyleSanitizer, NgStyleType, stringToKeyValue
 } from './style-transforms';
 
 @Directive()

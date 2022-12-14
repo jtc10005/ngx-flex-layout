@@ -8,7 +8,7 @@
 import { Directive, ElementRef, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 
-import { buildLayoutCSS } from 'ngx-flex-layout/_private-utils';
+import { buildLayoutCSS } from 'ngx-flexible-layout/_private-utils';
 import { MediaMarshaller } from '../media-marshaller/media-marshaller';
 import { StyleBuilder } from '../style-builder/style-builder';
 import { StyleDefinition, StyleUtils } from '../style-utils/style-utils';

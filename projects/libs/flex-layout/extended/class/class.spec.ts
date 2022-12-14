@@ -10,11 +10,11 @@ import { Component, PLATFORM_ID } from '@angular/core';
 import { ComponentFixture, fakeAsync, flush, inject, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
 import {
-  CoreModule, ɵMatchMedia as MatchMedia, ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
+    CoreModule, ɵMatchMedia as MatchMedia, ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
 
-import { customMatchers, expect, expectNativeEl, makeCreateTestComponent, queryFor } from 'ngx-flex-layout/_private-utils/testing';
+import { customMatchers, expect, expectNativeEl, makeCreateTestComponent, queryFor } from 'ngx-flexible-layout/_private-utils/testing';
 import { DefaultClassDirective } from './class';
 
 

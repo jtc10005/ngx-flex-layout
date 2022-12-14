@@ -8,16 +8,16 @@
 import { CommonModule } from '@angular/common';
 import { Component, Injectable, OnInit } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
-import { FlexLayoutModule } from 'ngx-flex-layout';
+import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
-  SERVER_TOKEN,
-  StyleBuilder,
-  StyleUtils, ɵMatchMedia as MatchMedia,
-  ɵMockMatchMedia as MockMatchMedia,
-  ɵMockMatchMediaProvider as MockMatchMediaProvider
-} from 'ngx-flex-layout/core';
-import { FlexModule, LayoutStyleBuilder } from 'ngx-flex-layout/flex';
-import { customMatchers, expectEl, expectNativeEl, makeCreateTestComponent, queryFor } from 'ngx-flex-layout/_private-utils/testing';
+    SERVER_TOKEN,
+    StyleBuilder,
+    StyleUtils, ɵMatchMedia as MatchMedia,
+    ɵMockMatchMedia as MockMatchMedia,
+    ɵMockMatchMediaProvider as MockMatchMediaProvider
+} from 'ngx-flexible-layout/core';
+import { FlexModule, LayoutStyleBuilder } from 'ngx-flexible-layout/flex';
+import { customMatchers, expectEl, expectNativeEl, makeCreateTestComponent, queryFor } from 'ngx-flexible-layout/_private-utils/testing';
 
 
 describe('layout directive', () => {

@@ -8,12 +8,12 @@
 import { Injectable, OnDestroy } from '@angular/core';
 import { asapScheduler, Observable, of, Subject } from 'rxjs';
 import {
-  debounceTime,
-  distinctUntilChanged,
-  filter,
-  map,
-  switchMap,
-  takeUntil
+    debounceTime,
+    distinctUntilChanged,
+    filter,
+    map,
+    switchMap,
+    takeUntil
 } from 'rxjs/operators';
 
 import { mergeAlias } from '../add-alias';
@@ -45,7 +45,7 @@ import { sortDescendingPriority } from '../utils/sort';
  *
  *  // RxJS
  *  import { filter } from 'rxjs/operators';
- *  import { MediaObserver } from 'ngx-flex-layout';
+ *  import { MediaObserver } from 'ngx-flexible-layout';
  *
  *  @Component({ ... })
  *  export class AppComponent {
