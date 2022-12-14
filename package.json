@@ -1,7 +1,7 @@
 {
   "name": "flex-layout-srcs",
   "description": "Angular Flex Layout",
-  "version": "15.0.0",
+  "version": "15.0.1",
   "homepage": "https://github.com/jtc10005/ngx-flex-layout",
   "bugs": "https://github.com/jtc10005/ngx-flex-layout/issues",
   "repository": {

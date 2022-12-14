@@ -1,7 +1,7 @@
-import {readFileSync, writeFileSync} from 'fs';
-import {platform} from 'os';
-import {buildConfig} from './build-config';
-import {spawnSync} from 'child_process';
+import { spawnSync } from 'child_process';
+import { readFileSync, writeFileSync } from 'fs';
+import { platform } from 'os';
+import { buildConfig } from './build-config';
 
 /** Variable that is set to the string for version placeholders. */
 const versionPlaceholderText = '0.0.0-PLACEHOLDER';
@@ -20,10 +20,11 @@ const versionPlaceholderRegex = new RegExp(versionPlaceholderText, 'g');
  * version of Library.
  */
 export function replaceVersionPlaceholders(packageDir: string) {
+  console.log('buildConfig.angularVersion', buildConfig.angularVersion);
+  console.log('buildConfig.projectVersion', buildConfig.projectVersion);
   // Resolve files that contain version placeholders using Grep or Findstr since those are
   // extremely fast and also have a very simple usage.
   const files = findFilesWithPlaceholders(packageDir);
-
   // Walk through every file that contains version placeholders and replace those with the current
   // version of the root package.json file.
   files.forEach(filePath => {
