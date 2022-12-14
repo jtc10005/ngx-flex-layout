@@ -1,6 +1,6 @@
 {
   "name": "ngx-flex-layout",
-  "version": "15.0.0",
+  "version": "0.0.0-PLACEHOLDER",
   "exports": {
     "./mq": {
       "sass": "./core/sass/_layout-bp.scss"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/angular/flex-layout.git"
+    "url": "https://github.com/jtc10005/ngx-flex-layout.git"
   },
   "keywords": [
     "angular",
@@ -22,9 +22,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/angular/flex-layout/issues"
+    "url": "https://github.com/jtc10005/ngx-flex-layout/issues"
   },
-  "homepage": "https://github.com/angular/flex-layout#readme",
+  "homepage": "https://github.com/jtc10005/ngx-flex-layout#readme",
   "dependencies": {
     "tslib": "^2.3.0"
   },
