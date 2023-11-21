@@ -1,7 +1,7 @@
 {
   "name": "flex-layout-srcs",
   "description": "Angular Flex Layout",
-  "version": "16.0.1",
+  "version": "17.0.4",
   "homepage": "https://github.com/jtc10005/ngx-flex-layout",
   "bugs": "https://github.com/jtc10005/ngx-flex-layout/issues",
   "repository": {
@@ -29,7 +29,7 @@
     "publish_to_npm": "npm run release && cd dist/releases/flex-layout && npm publish --access public"
   },
   "private": true,
-  "requiredAngularVersion": "^16.0.1",
+  "requiredAngularVersion": "^17.0.4",
   "dependencies": {
     "@angular/animations": "~17.0.4",
     "@angular/common": "~17.0.4",
