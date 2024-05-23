@@ -36,7 +36,7 @@
     "@angular/compiler": "~18.0.0",
     "@angular/core": "~18.0.0",
     "@angular/forms": "~18.0.0",
-    "@angular/material": "~16.0.1",
+    "@angular/material": "~18.0.0",
     "@angular/platform-browser": "~18.0.0",
     "@angular/platform-browser-dynamic": "~18.0.0",
     "@angular/platform-server": "~18.0.0",
@@ -49,7 +49,7 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~18.0.1",
-    "@angular/cdk": "~16.0.1",
+    "@angular/cdk": "~18.0.0",
     "@angular/cli": "~18.0.1",
     "@angular/compiler-cli": "~18.0.0",
     "@ngtools/webpack": "~18.0.1",
