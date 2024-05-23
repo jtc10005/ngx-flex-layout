@@ -45,7 +45,13 @@ export class ClassDirective extends BaseDirective2 implements DoCheck {
     if (!this.ngClassInstance) {
       // Create an instance NgClass Directive instance only if `ngClass=""` has NOT been defined on
       // the same host element; since the responsive variations may be defined...
-      this.ngClassInstance = new NgClass(iterableDiffers, keyValueDiffers, elementRef, renderer2);
+      //////////////////////////////////////////////////////////////////////////////////////////////
+      // Upgrade to Angular 18 broke this
+      //https://github.com/angular/angular/commit/1be6b0a58a9e96f9f0bda8acb63c701f792e469b
+      // this.ngClassInstance = new NgClass(iterableDiffers, keyValueDiffers, elementRef, renderer2);
+      //////////////////////////////////////////////////////////////////////////////////////////////
+
+      this.ngClassInstance = new NgClass(elementRef, renderer2);
     }
     this.init();
     this.setValue('', '');
