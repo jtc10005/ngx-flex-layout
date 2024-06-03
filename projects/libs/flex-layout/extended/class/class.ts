@@ -7,15 +7,15 @@
  */
 import { NgClass } from '@angular/common';
 import {
-    Directive,
-    DoCheck,
-    ElementRef,
-    Input,
-    IterableDiffers,
-    KeyValueDiffers,
-    Optional,
-    Renderer2,
-    Self
+  Directive,
+  DoCheck,
+  ElementRef,
+  Input,
+  IterableDiffers,
+  KeyValueDiffers,
+  Optional,
+  Renderer2,
+  Self
 } from '@angular/core';
 import { BaseDirective2, MediaMarshaller, StyleUtils } from 'ngx-flexible-layout/core';
 
@@ -35,12 +35,12 @@ export class ClassDirective extends BaseDirective2 implements DoCheck {
   }
 
   constructor(elementRef: ElementRef,
-              styler: StyleUtils,
-              marshal: MediaMarshaller,
-              iterableDiffers: IterableDiffers,
-              keyValueDiffers: KeyValueDiffers,
-              renderer2: Renderer2,
-              @Optional() @Self() protected readonly ngClassInstance: NgClass) {
+    styler: StyleUtils,
+    marshal: MediaMarshaller,
+    iterableDiffers: IterableDiffers,
+    keyValueDiffers: KeyValueDiffers,
+    renderer2: Renderer2,
+    @Optional() @Self() protected readonly ngClassInstance: NgClass) {
     super(elementRef, null!, styler, marshal);
     if (!this.ngClassInstance) {
       // Create an instance NgClass Directive instance only if `ngClass=""` has NOT been defined on
@@ -59,7 +59,7 @@ export class ClassDirective extends BaseDirective2 implements DoCheck {
 
   protected override updateWithValue(value: any) {
     this.ngClassInstance.ngClass = value;
-    this.ngClassInstance.ngDoCheck();
+    this.ngDoCheck();
   }
 
   // ******************************************************************
@@ -70,7 +70,9 @@ export class ClassDirective extends BaseDirective2 implements DoCheck {
    * For ChangeDetectionStrategy.onPush and ngOnChanges() updates
    */
   ngDoCheck() {
-    this.ngClassInstance.ngDoCheck();
+    // ngDoCheck only to applicable renderers
+    if (this.ngClassInstance["_renderer"] && "addClass" in this.ngClassInstance["_renderer"])
+      this.ngClassInstance.ngDoCheck();
   }
 }
 
@@ -91,7 +93,7 @@ const selector = `
  * This maintains the core functionality of 'ngClass' and adds responsive API
  * Note: this class is a no-op when rendered on the server
  */
-@Directive({selector, inputs})
+@Directive({ selector, inputs })
 export class DefaultClassDirective extends ClassDirective {
   protected override inputs = inputs;
 }
