@@ -37,8 +37,8 @@ const ALL_DIRECTIVES = [
  */
 
 @NgModule({
-  imports: [CoreModule, BidiModule],
-  declarations: [...ALL_DIRECTIVES],
+  imports: [CoreModule, BidiModule,...ALL_DIRECTIVES],
+  declarations: [],
   exports: [...ALL_DIRECTIVES]
 })
 export class FlexModule {
