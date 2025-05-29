@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-responsive-style',
   templateUrl: './responsive-style.component.html'
 })

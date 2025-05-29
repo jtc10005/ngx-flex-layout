@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-grid-column-span',
   templateUrl: './grid-column-span.component.html',
   styleUrls: ['./grid-column-span.component.scss']

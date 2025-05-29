@@ -3,6 +3,7 @@ import { MediaChange, MediaObserver } from 'ngx-flexible-layout';
 import { Subscription } from 'rxjs';
 
 @Component({
+  standalone: false,
   selector: 'demo-responsive-row-column',
   templateUrl: './responsive-row-column.component.html'
 })

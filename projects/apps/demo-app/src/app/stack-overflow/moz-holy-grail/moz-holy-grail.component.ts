@@ -1,6 +1,7 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-moz-holy-grail',
   templateUrl: './moz-holy-grail.component.html',
   styleUrls: ['./moz-holy-grail.component.scss']

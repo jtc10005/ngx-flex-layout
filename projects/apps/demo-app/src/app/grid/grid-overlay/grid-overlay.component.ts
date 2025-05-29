@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-grid-overlay',
   template: `
     <mat-card class="card-demo">

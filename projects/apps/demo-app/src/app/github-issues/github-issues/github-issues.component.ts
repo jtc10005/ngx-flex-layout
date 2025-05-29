@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'demo-github-issues',
+  standalone: false,
   template: `
     <demo-issue-266 class="small-demo"></demo-issue-266>
     <demo-issue-5345 class="small-demo"></demo-issue-5345>

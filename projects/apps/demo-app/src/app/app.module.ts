@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { APP_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BREAKPOINT, FlexLayoutModule } from 'ngx-flexible-layout';
@@ -25,7 +25,6 @@ const EXTRA_BREAKPOINTS = [{
     WatermarkComponent
   ],
   imports: [
-    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     BrowserAnimationsModule,
     RoutingModule,
     DemoMaterialModule,
@@ -40,7 +39,8 @@ const EXTRA_BREAKPOINTS = [{
       provide: BREAKPOINT,
       useValue: EXTRA_BREAKPOINTS,
       multi: true
-    }
+    },
+    {provide: APP_ID, useValue: 'serverApp'},
   ],
   bootstrap: [AppComponent]
 })

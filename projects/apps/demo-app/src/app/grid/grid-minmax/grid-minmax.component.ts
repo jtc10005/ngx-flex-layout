@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 // Example taken from https://gridbyexample.com/examples/example29/
 @Component({
+  standalone: false,
   selector: 'demo-grid-minmax',
   template: `
     <mat-card class="card-demo">

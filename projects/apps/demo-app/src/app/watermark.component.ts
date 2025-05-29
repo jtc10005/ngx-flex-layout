@@ -2,6 +2,7 @@ import {Component, Input} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
+  standalone: false,
   selector: 'watermark',
   styleUrls: ['watermark.component.scss'],
   template: `

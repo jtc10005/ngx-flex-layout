@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 const DIRECTIONS = ['column', 'column-reverse'];
 
 @Component({
+  standalone: false,
   selector: 'demo-complex-column-ordering',
   templateUrl: './complex-column-ordering.component.html',
   styleUrls: ['./complex-column-ordering.component.scss']

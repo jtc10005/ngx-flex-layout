@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 const DIRECTIONS = ['', '-reverse'];
 
 @Component({
+  standalone: false,
   selector: 'demo-grid-area-row-span',
   templateUrl: './grid-area-row-span.component.html',
   styleUrls: ['./grid-area-row-span.component.scss']

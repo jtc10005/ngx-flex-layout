@@ -16,6 +16,7 @@ import { SplitHandleDirective } from './split-handle.directive';
 
 
 @Directive({
+  standalone: false,
   selector: '[ngxSplit]',
   host: {
     class: 'ngx-split'

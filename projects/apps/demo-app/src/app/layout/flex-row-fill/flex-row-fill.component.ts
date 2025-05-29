@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 const DIRECTIONS = ['row', 'row-reverse', 'column', 'column-reverse'];
 
 @Component({
+  standalone: false,
   selector: 'demo-flex-row-fill',
   template: `
     <mat-card class="card-demo" (click)="toggleDirection()">
