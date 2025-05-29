@@ -1,5 +1,5 @@
-import {Directive, ElementRef, Inject, Output} from '@angular/core';
-import {DOCUMENT} from '@angular/common';
+import {Directive, ElementRef, Inject, Output, DOCUMENT} from '@angular/core';
+
 import {fromEvent, Observable} from 'rxjs';
 import {map, switchMap, takeUntil, throttleTime} from 'rxjs/operators';
 

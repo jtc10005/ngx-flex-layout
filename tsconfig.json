@@ -10,7 +10,7 @@
       "ngx-flexible-layout/*": [
         "dist/releases/flex-layout/ngx-flex-layout-*",
         "dist/releases/flex-layout/*"
-      ],
+      ]
     },
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
@@ -24,14 +24,14 @@
     "declaration": false,
     "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "module": "es2020",
     "lib": [
       "es2020",
       "dom"
-    ],
+    ]
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
