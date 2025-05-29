@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-responsive-flex-directive',
   template: `
     <mat-card class="card-demo">

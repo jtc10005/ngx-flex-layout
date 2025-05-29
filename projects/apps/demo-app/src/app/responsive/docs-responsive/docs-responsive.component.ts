@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-docs-responsive',
   template: `
     <demo-responsive-layout-direction  class='small-demo' fxHide.print>

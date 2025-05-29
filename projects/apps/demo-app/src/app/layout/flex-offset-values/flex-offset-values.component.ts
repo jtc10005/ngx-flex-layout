@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-flex-offset-values',
   template: `
     <mat-card class="card-demo">

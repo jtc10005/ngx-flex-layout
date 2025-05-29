@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {Direction} from '@angular/cdk/bidi';
 
 @Component({
+  standalone: false,
   selector: 'demo-layout-with-direction',
   templateUrl: './layout-with-direction.component.html'
 })

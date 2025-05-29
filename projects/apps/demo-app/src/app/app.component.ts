@@ -5,7 +5,8 @@ import { VERSION } from 'ngx-flexible-layout';
 @Component({
   selector: 'demo-root',
   templateUrl: './app.component.html',
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  standalone: false
 })
 export class AppComponent {
   version = VERSION.full;

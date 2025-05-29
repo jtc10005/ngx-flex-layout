@@ -3,6 +3,7 @@ import { MediaChange, MediaObserver } from 'ngx-flexible-layout';
 import { Observable } from 'rxjs';
 
 @Component({
+  standalone: false,
   selector: 'media-query-status',
   template: `
     <div class="mqInfo">

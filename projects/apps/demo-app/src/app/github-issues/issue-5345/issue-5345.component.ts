@@ -5,7 +5,8 @@ const DIRECTIONS = ['row', 'row-reverse'];
 @Component({
   selector: 'demo-issue-5345',
   templateUrl: './issue-5345.component.html',
-  styleUrls: ['./issue-5345.component.scss']
+  styleUrls: ['./issue-5345.component.scss'],
+  standalone: false
 })
 export class Issue5345Component {
   direction = 'row';

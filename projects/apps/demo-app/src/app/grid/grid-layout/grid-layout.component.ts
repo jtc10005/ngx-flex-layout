@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 // Example taken from https://gridbyexample.com/examples/example13/
 /* tslint:disable */
 @Component({
+  standalone: false,
   selector: 'demo-grid-layout',
   template: `
     <mat-card class="card-demo">

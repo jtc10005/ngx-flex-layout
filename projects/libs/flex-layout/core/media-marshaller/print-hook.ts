@@ -5,7 +5,7 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import {Inject, Injectable, OnDestroy} from '@angular/core';
+import {Inject, Injectable, OnDestroy, DOCUMENT} from '@angular/core';
 
 import {mergeAlias} from '../add-alias';
 import {MediaChange} from '../media-change';
@@ -13,7 +13,7 @@ import {BreakPoint} from '../breakpoints/break-point';
 import {LAYOUT_CONFIG, LayoutConfigOptions} from '../tokens/library-config';
 import {BreakPointRegistry, OptionalBreakPoint} from '../breakpoints/break-point-registry';
 import {sortDescendingPriority} from '../utils/sort';
-import {DOCUMENT} from '@angular/common';
+
 
 /**
  * Interface to apply PrintHook to call anonymous `target.updateStyles()`

@@ -17,7 +17,7 @@ export const YBA_BREAKPOINT_PROVIDER = {
 const inputs = ['fxHide', 'fxHide.yba'];
 const selector = `[fxHide], [fxHide.yba]`;
 
-@Directive({selector, inputs})
+@Directive({selector, inputs, standalone: false})
 export class CustomHideDirective extends ShowHideDirective {
   protected override inputs = inputs;
 }
@@ -59,7 +59,8 @@ export class CustomHideDirective extends ShowHideDirective {
         </div>
       </mat-card-footer>
     </mat-card>
-  `
+  `,
+  standalone: false
 })
 export class HideWithCustomBPComponent {
 }

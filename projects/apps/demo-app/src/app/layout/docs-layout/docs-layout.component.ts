@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-docs-layout',
   template: `
     <demo-layout-alignment class="small-demo"></demo-layout-alignment>

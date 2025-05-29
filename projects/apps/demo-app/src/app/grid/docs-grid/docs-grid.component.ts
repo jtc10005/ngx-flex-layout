@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-docs-grid',
   template: `
     <demo-grid-layout class="small-demo"></demo-grid-layout>

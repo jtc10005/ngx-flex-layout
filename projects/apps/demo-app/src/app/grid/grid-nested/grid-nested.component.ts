@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 
 // Example taken from https://gridbyexample.com/examples/example21/
 @Component({
+  standalone: false,
   selector: 'demo-grid-nested',
   template: `
     <mat-card class="card-demo">

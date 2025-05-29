@@ -5,8 +5,8 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import {APP_BOOTSTRAP_LISTENER, PLATFORM_ID, InjectionToken} from '@angular/core';
-import {DOCUMENT, isPlatformBrowser} from '@angular/common';
+import {APP_BOOTSTRAP_LISTENER, PLATFORM_ID, InjectionToken, DOCUMENT} from '@angular/core';
+import {isPlatformBrowser} from '@angular/common';
 
 /**
  * Find all of the server-generated stylings, if any, and remove them

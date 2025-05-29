@@ -5,8 +5,8 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import {Inject, Injectable, PLATFORM_ID} from '@angular/core';
-import {DOCUMENT, isPlatformBrowser} from '@angular/common';
+import {Inject, Injectable, PLATFORM_ID, DOCUMENT} from '@angular/core';
+import {isPlatformBrowser} from '@angular/common';
 
 import {fromEvent, Subscription} from 'rxjs';
 import {take} from 'rxjs/operators';

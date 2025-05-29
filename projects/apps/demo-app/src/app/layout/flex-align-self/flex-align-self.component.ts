@@ -3,6 +3,7 @@ import {Component} from '@angular/core';
 const ALIGN_OPTIONS = ['auto', 'start', 'center', 'baseline', 'end', 'stretch'];
 
 @Component({
+  standalone: false,
   selector: 'demo-flex-align-self',
   templateUrl: './flex-align-self.component.html'
 })

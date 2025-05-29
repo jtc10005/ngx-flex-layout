@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 @Component({
+  standalone: false,
   selector: 'demo-stack-overflow',
   template: `
     <demo-hide-custom-bp></demo-hide-custom-bp>
