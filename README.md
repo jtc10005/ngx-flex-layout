@@ -1,5 +1,20 @@
 # ngx-flexible-layout
 
+## ⚠️ Maintenance Status
+
+**This project is now in maintenance mode with limited active development.**
+
+Due to a change in my employment situation, I will no longer be actively maintaining or upgrading this library. However, **I remain committed to reviewing and merging quality pull requests** from the community.  
+
+If you need new features, bug fixes, or Angular version upgrades: 
+- **Submit a PR** - I will review and approve contributions that maintain the library's quality
+- **Community contributions are welcome and encouraged**
+- Feel free to fork and continue development if you need immediate changes
+
+Thank you to everyone who has used this library.  I hope the community can help keep it going!  🙏
+
+---
+
 ## This is an attempt to port @angular/flex-layout to provide support after EOL
 
 The Angular team has decided to depricate the @angular/flex-layout library after v15.  It seems that this is going to cause issues for some people.
