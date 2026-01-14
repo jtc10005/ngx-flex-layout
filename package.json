@@ -26,7 +26,7 @@
     "release": "npm run build && npm run stamp",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s",
     "pack": "npm run stamp && cd dist/releases/flex-layout && npm pack",
-    "publish_to_npm": "npm run release && cd dist/releases/flex-layout && npm publish --access public"
+    "publish_to_npm": "npm run release && cd dist/releases/flex-layout && npm publish --provenance --access public"
   },
   "private": true,
   "requiredAngularVersion": "^21.0.0",
