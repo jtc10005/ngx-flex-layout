@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { isPlatformBrowser } from '@angular/common';
-import { Inject, Injectable, NgZone, OnDestroy, PLATFORM_ID, DOCUMENT } from '@angular/core';
+import { Inject, Injectable, NgZone, OnDestroy, PLATFORM_ID, DOCUMENT, CSP_NONCE, Optional } from '@angular/core';
 import { BehaviorSubject, merge, Observable, Observer } from 'rxjs';
 import { filter } from 'rxjs/operators';
 
@@ -28,7 +28,8 @@ export class MatchMedia implements OnDestroy {
 
   constructor(protected _zone: NgZone,
               @Inject(PLATFORM_ID) protected _platformId: Object,
-              @Inject(DOCUMENT) protected _document: any) {
+              @Inject(DOCUMENT) protected _document: any,
+              @Optional() @Inject(CSP_NONCE) protected _cspNonce: string | null) {
   }
 
   /**
@@ -102,7 +103,7 @@ export class MatchMedia implements OnDestroy {
     const list = Array.isArray(mediaQuery) ? mediaQuery : [mediaQuery];
     const matches: MediaChange[] = [];
 
-    buildQueryCss(list, this._document);
+    buildQueryCss(list, this._document, this._cspNonce);
 
     list.forEach((query: string) => {
       const onMQLEvent = (e: MediaQueryListEvent) => {
@@ -155,8 +156,9 @@ const ALL_STYLES: { [key: string]: any } = {};
  *
  * @param mediaQueries
  * @param _document
+ * @param _cspNonce
  */
-function buildQueryCss(mediaQueries: string[], _document: Document) {
+function buildQueryCss(mediaQueries: string[], _document: Document, _cspNonce: string | null) {
   const list = mediaQueries.filter(it => !ALL_STYLES[it]);
   if (list.length > 0) {
     const query = list.join(', ');
@@ -164,6 +166,9 @@ function buildQueryCss(mediaQueries: string[], _document: Document) {
     try {
       const styleEl = _document.createElement('style');
 
+      if (_cspNonce) {
+        styleEl.setAttribute('nonce', _cspNonce);
+      }
       styleEl.setAttribute('type', 'text/css');
       if (!(styleEl as any).styleSheet) {
         const cssText = `

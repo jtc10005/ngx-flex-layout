@@ -5,7 +5,7 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-import {Inject, Injectable, NgZone, PLATFORM_ID, DOCUMENT} from '@angular/core';
+import {Inject, Injectable, NgZone, PLATFORM_ID, DOCUMENT, CSP_NONCE, Optional} from '@angular/core';
 
 
 import {MatchMedia} from '../match-media';
@@ -26,8 +26,9 @@ export class MockMatchMedia extends MatchMedia {
   constructor(_zone: NgZone,
               @Inject(PLATFORM_ID) _platformId: Object,
               @Inject(DOCUMENT) _document: any,
+              @Optional() @Inject(CSP_NONCE) _cspNonce: string | null,
               private _breakpoints: BreakPointRegistry) {
-    super(_zone, _platformId, _document);
+    super(_zone, _platformId, _document, _cspNonce);
   }
 
   /** Easy method to clear all listeners for all mediaQueries */

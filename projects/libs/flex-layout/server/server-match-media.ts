@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 
-import { Inject, Injectable, NgZone, PLATFORM_ID, DOCUMENT } from '@angular/core';
+import { Inject, Injectable, NgZone, PLATFORM_ID, DOCUMENT, CSP_NONCE, Optional } from '@angular/core';
 import {
     BreakPoint, BREAKPOINTS, LayoutConfigOptions, LAYOUT_CONFIG, ɵMatchMedia as MatchMedia
 } from 'ngx-flexible-layout/core';
@@ -105,9 +105,10 @@ export class ServerMatchMedia extends MatchMedia {
   constructor(protected override _zone: NgZone,
               @Inject(PLATFORM_ID) protected override _platformId: Object,
               @Inject(DOCUMENT) protected override _document: any,
+              @Optional() @Inject(CSP_NONCE) protected override _cspNonce: string | null,
               @Inject(BREAKPOINTS) protected breakpoints: BreakPoint[],
               @Inject(LAYOUT_CONFIG) protected layoutConfig: LayoutConfigOptions) {
-    super(_zone, _platformId, _document);
+    super(_zone, _platformId, _document, _cspNonce);
 
     const serverBps = layoutConfig.ssrObserveBreakpoints;
     if (serverBps) {
