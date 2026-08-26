@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const DIRECTIONS = ['row', 'row-reverse'];
 
@@ -6,6 +6,7 @@ const DIRECTIONS = ['row', 'row-reverse'];
   selector: 'demo-issue-5345',
   templateUrl: './issue-5345.component.html',
   styleUrls: ['./issue-5345.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class Issue5345Component {

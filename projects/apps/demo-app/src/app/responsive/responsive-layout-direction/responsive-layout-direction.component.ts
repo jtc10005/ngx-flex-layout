@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-responsive-layout-direction',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <mat-card class="card-demo">
       <mat-card-title>Responsive Layout Directions</mat-card-title>

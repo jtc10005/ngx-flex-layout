@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const DIRECTIONS = ['column', 'column-reverse'];
 
@@ -6,6 +6,7 @@ const DIRECTIONS = ['column', 'column-reverse'];
   standalone: false,
   selector: 'demo-complex-column-ordering',
   templateUrl: './complex-column-ordering.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./complex-column-ordering.component.scss']
 })
 export class ComplexColumnOrderingComponent {

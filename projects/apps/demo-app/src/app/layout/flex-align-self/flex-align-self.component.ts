@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const ALIGN_OPTIONS = ['auto', 'start', 'center', 'baseline', 'end', 'stretch'];
 
 @Component({
   standalone: false,
   selector: 'demo-flex-align-self',
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './flex-align-self.component.html'
 })
 export class FlexAlignSelfComponent {

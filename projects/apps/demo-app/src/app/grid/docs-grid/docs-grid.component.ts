@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-docs-grid',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <demo-grid-layout class="small-demo"></demo-grid-layout>
     <demo-grid-nested class="small-demo"></demo-grid-nested>

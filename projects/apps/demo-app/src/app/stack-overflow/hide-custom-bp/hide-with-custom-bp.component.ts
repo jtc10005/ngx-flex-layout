@@ -1,4 +1,4 @@
-import { Component, Directive } from '@angular/core';
+import { Component, Directive, ChangeDetectionStrategy } from '@angular/core';
 import { BREAKPOINT, ShowHideDirective } from 'ngx-flexible-layout';
 
 const YBA_BREAKPOINT = {
@@ -60,6 +60,7 @@ export class CustomHideDirective extends ShowHideDirective {
       </mat-card-footer>
     </mat-card>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class HideWithCustomBPComponent {

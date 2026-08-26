@@ -1,10 +1,11 @@
-import {Component, Input} from '@angular/core';
+import {Component, Input, ChangeDetectionStrategy} from '@angular/core';
 import {DomSanitizer} from '@angular/platform-browser';
 
 @Component({
   standalone: false,
   selector: 'watermark',
   styleUrls: ['watermark.component.scss'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <div [style.background]="backgroundImage">
     </div>

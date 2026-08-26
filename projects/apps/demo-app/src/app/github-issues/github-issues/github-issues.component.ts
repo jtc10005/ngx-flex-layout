@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   selector: 'demo-github-issues',
   standalone: false,
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <demo-issue-266 class="small-demo"></demo-issue-266>
     <demo-issue-5345 class="small-demo"></demo-issue-5345>

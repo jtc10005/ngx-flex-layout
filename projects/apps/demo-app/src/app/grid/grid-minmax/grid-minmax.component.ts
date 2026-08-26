@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 // Example taken from https://gridbyexample.com/examples/example29/
 @Component({
@@ -28,6 +28,7 @@ import { Component } from '@angular/core';
       </mat-card-content>
     </mat-card>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: [`.box {
     /*background-color: #444;*/
     /*color: #fff;*/

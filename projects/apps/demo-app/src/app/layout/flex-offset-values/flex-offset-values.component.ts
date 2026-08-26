@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-flex-offset-values',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <mat-card class="card-demo">
       <mat-card-title>Flex Offset Values</mat-card-title>

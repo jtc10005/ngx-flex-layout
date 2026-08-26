@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   standalone: false,
@@ -22,6 +22,7 @@ import { Component } from '@angular/core';
       </mat-card-content>
     </mat-card>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styles: [`.box {
     border-radius: 5px;
     padding: 20px;

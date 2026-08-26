@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const DIRECTIONS = ['row', 'row-reverse', 'column', 'column-reverse'];
 
 @Component({
   standalone: false,
   selector: 'demo-layout-gap',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <mat-card class="card-demo">
       <mat-card-title><a href="" target="_blank">Layout Gap</a></mat-card-title>

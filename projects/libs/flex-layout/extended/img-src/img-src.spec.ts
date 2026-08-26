@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { Component, PLATFORM_ID } from '@angular/core';
+import { Component, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import {
     SERVER_TOKEN,
@@ -330,6 +330,7 @@ describe('img-src directive', () => {
 
 @Component({
   selector: 'test-src-api',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: ''
 })
 class TestSrcComponent {

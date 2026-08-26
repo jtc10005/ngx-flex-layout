@@ -7,7 +7,7 @@
  */
 import { Platform } from '@angular/cdk/platform';
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { Component, Injectable, PLATFORM_ID, ViewChild } from '@angular/core';
+import { Component, Injectable, PLATFORM_ID, ViewChild, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, fakeAsync, inject, TestBed } from '@angular/core/testing';
 import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
@@ -1107,6 +1107,7 @@ export class MockFlexStyleBuilder extends StyleBuilder {
 
 @Component({
   selector: 'test-layout',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestFlexComponent {
@@ -1116,6 +1117,7 @@ class TestFlexComponent {
 
 @Component({
   selector: 'test-query-with-flex',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <div fxLayout>
       <div fxFlex='50%' fxFlex.sm='71%'></div>

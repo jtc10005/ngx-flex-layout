@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const DIRECTIONS = ['', '-reverse'];
 
@@ -6,6 +6,7 @@ const DIRECTIONS = ['', '-reverse'];
   standalone: false,
   selector: 'demo-grid-area-row-span',
   templateUrl: './grid-area-row-span.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./grid-area-row-span.component.scss']
 })
 export class GridAreaRowSpanComponent {

@@ -7,7 +7,7 @@
  */
 import { DIR_DOCUMENT } from '@angular/cdk/bidi';
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { Component, Injectable, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, Injectable, OnInit, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed, waitForAsync } from '@angular/core/testing';
 import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
@@ -695,6 +695,7 @@ export class MockLayoutGapStyleBuilder extends StyleBuilder {
 // *****************************************************************
 @Component({
   selector: 'test-layout',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestLayoutGapComponent implements OnInit {

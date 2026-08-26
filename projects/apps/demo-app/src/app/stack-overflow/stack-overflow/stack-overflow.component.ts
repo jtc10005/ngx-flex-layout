@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-stack-overflow',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <demo-hide-custom-bp></demo-hide-custom-bp>
     <demo-moz-holy-grail class='small-demo'></demo-moz-holy-grail>

@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const DIRECTIONS = ['row', 'row-reverse', 'column', 'column-reverse'];
 
 @Component({
   standalone: false,
   selector: 'demo-flex-row-fill',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <mat-card class="card-demo" (click)="toggleDirection()">
       <mat-card-title>'Flex' to Fill Row</mat-card-title>
