@@ -1,9 +1,10 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-layout-alignment',
   templateUrl: './layout-alignment.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./layout-alignment.component.scss']
 })
 export class LayoutAlignmentComponent {

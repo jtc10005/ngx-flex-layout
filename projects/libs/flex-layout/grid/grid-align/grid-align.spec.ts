@@ -7,7 +7,7 @@
  */
 import { Platform } from '@angular/cdk/platform';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import {
     SERVER_TOKEN,
@@ -323,6 +323,7 @@ describe('align directive', () => {
 
 @Component({
   selector: 'test-layout',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestAlignComponent implements OnInit {

@@ -7,7 +7,7 @@
  */
 import { DIR_DOCUMENT } from '@angular/cdk/bidi';
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { Component, Injectable, PLATFORM_ID } from '@angular/core';
+import { Component, Injectable, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
@@ -247,6 +247,7 @@ export class MockFlexOffsetStyleBuilder extends StyleBuilder {
 
 @Component({
   selector: 'test-component-shell',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestFlexComponent {

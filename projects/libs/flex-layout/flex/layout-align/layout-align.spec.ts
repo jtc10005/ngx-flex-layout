@@ -7,7 +7,7 @@
  */
 import { Platform } from '@angular/cdk/platform';
 import { CommonModule } from '@angular/common';
-import { Component, Injectable, OnInit } from '@angular/core';
+import { Component, Injectable, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import { FlexLayoutModule } from 'ngx-flexible-layout';
 import {
@@ -525,6 +525,7 @@ export class MockLayoutAlignStyleBuilder extends StyleBuilder {
 
 @Component({
   selector: 'test-layout',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestLayoutAlignComponent implements OnInit {

@@ -4,7 +4,7 @@
     "noUnusedParameters": true,
     "lib": ["es2020", "dom"],
     "module": "commonjs",
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "esModuleInterop": true,
     "outDir": "../../dist/tools/gulp",
     "noUnusedLocals": true,
@@ -19,6 +19,5 @@
     "types": [
       "node"
     ],
-    "baseUrl": ".",
   }
 }

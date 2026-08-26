@@ -4,15 +4,14 @@
   "compilerOptions": {
     "paths": {
       "ngx-flexible-layout": [
-        "dist/releases/flex-layout/ngx-flex-layout",
-        "dist/releases/flex-layout"
+        "./dist/releases/flex-layout/ngx-flex-layout",
+        "./dist/releases/flex-layout"
       ],
       "ngx-flexible-layout/*": [
-        "dist/releases/flex-layout/ngx-flex-layout-*",
-        "dist/releases/flex-layout/*"
+        "./dist/releases/flex-layout/ngx-flex-layout-*",
+        "./dist/releases/flex-layout/*"
       ]
     },
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -22,7 +21,6 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "importHelpers": true,

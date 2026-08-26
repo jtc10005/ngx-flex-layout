@@ -1,9 +1,10 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 import {Direction} from '@angular/cdk/bidi';
 
 @Component({
   standalone: false,
   selector: 'demo-layout-with-direction',
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './layout-with-direction.component.html'
 })
 export class LayoutWithDirectionComponent {

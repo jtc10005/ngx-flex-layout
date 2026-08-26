@@ -1,10 +1,11 @@
-import { Component, OnDestroy } from '@angular/core';
+import { Component, OnDestroy, ChangeDetectionStrategy } from '@angular/core';
 import { MediaChange, MediaObserver } from 'ngx-flexible-layout';
 import { Subscription } from 'rxjs';
 
 @Component({
   standalone: false,
   selector: 'demo-responsive-row-column',
+  changeDetection: ChangeDetectionStrategy.Eager,
   templateUrl: './responsive-row-column.component.html'
 })
 export class ResponsiveRowColumnComponent implements OnDestroy {

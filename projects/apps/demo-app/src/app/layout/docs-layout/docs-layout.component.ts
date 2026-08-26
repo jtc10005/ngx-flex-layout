@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-docs-layout',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <demo-layout-alignment class="small-demo"></demo-layout-alignment>
     <demo-layout-fill class="small-demo"></demo-layout-fill>

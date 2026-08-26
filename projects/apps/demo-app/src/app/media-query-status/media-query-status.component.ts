@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { MediaChange, MediaObserver } from 'ngx-flexible-layout';
 import { Observable } from 'rxjs';
 
@@ -15,6 +15,7 @@ import { Observable } from 'rxjs';
       </ul>
     </div>
   `,
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./media-query-status.component.scss'],
 })
 export class MediaQueryStatusComponent {

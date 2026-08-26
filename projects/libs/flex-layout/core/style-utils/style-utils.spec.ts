@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { Component, PLATFORM_ID } from '@angular/core';
+import { Component, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 
 import { customMatchers, expectNativeEl, makeCreateTestComponent } from 'ngx-flexible-layout/_private-utils/testing';
@@ -84,6 +84,7 @@ describe('styler', () => {
 
 @Component({
   selector: 'test-style-utils',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestLayoutComponent {

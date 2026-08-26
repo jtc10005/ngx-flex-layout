@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 // Example taken from https://gridbyexample.com/examples/example13/
 /* tslint:disable */
 @Component({
   standalone: false,
   selector: 'demo-grid-layout',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <mat-card class="card-demo">
       <mat-card-title>Basic Responsive Grid App</mat-card-title>

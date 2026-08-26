@@ -1,8 +1,9 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-layout-fill',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `
     <mat-card class="card-demo">
       <mat-card-title><a href="" target="_blank">Layout Fill</a></mat-card-title>

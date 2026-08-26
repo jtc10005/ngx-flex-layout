@@ -1,10 +1,11 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 const DIRECTIONS = ['wrap', 'wrap-reverse'];
 
 @Component({
   selector: 'demo-issue-9897',
   templateUrl: './issue-9897.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class Issue9897Component {

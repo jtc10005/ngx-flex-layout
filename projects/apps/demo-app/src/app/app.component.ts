@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/core';
 
 import { VERSION } from 'ngx-flexible-layout';
 
@@ -6,6 +6,7 @@ import { VERSION } from 'ngx-flexible-layout';
   selector: 'demo-root',
   templateUrl: './app.component.html',
   encapsulation: ViewEncapsulation.None,
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class AppComponent {

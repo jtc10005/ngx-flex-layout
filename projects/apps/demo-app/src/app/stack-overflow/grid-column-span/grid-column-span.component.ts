@@ -1,9 +1,10 @@
-import {Component} from '@angular/core';
+import {Component, ChangeDetectionStrategy} from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'demo-grid-column-span',
   templateUrl: './grid-column-span.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./grid-column-span.component.scss']
 })
 export class GridColumnSpanComponent {

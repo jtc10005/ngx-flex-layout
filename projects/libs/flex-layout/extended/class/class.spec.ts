@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { CommonModule, isPlatformServer } from '@angular/common';
-import { Component, PLATFORM_ID } from '@angular/core';
+import { Component, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, fakeAsync, flush, inject, TestBed } from '@angular/core/testing';
 import { MatButtonModule } from '@angular/material/button';
 import {
@@ -287,6 +287,7 @@ describe('class directive', () => {
 
 @Component({
   selector: 'test-class-api',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestClassComponent {
@@ -637,7 +638,8 @@ describe('binding to CSS class list', () => {
    });
  });
 
-@Component({selector: 'test-cmp', template: ''})
+@Component({selector: 'test-cmp', changeDetection: ChangeDetectionStrategy.Eager,
+ template: ''})
 class TestComponent {
   condition = true;
   items: any[] = [];

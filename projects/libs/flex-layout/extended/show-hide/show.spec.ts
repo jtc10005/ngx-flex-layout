@@ -6,7 +6,7 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Component, Directive, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, Directive, OnInit, PLATFORM_ID, ChangeDetectionStrategy } from '@angular/core';
 import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -391,6 +391,7 @@ class FxShowHideDirective extends ShowHideDirective {
 
 @Component({
   selector: 'test-show-api',
+  changeDetection: ChangeDetectionStrategy.Eager,
   template: `<span>PlaceHolder Template HTML</span>`
 })
 class TestShowComponent implements OnInit {
